@@ -6,5 +6,5 @@
 @SSI
 Scenario: Calculating SSI
 	Given I have a calculator
-	When I entered "50" and "40" into the calculator and press SSI
-	Then the SSI result should be "90"
+	When I entered "50" and "30" into the calculator and press SSI
+	Then the SSI result should be "80"
