@@ -150,7 +150,7 @@ namespace ICT3101_Calculator
             double answer = num1 / num2;
             return answer;
         }
-
+        // SSI Calculation
         public double SSI(double num1, double num2)
         {
             double answer = num1 + num2;
