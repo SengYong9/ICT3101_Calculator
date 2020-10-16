@@ -21,7 +21,7 @@ namespace ICT3101_Calculator.UnitTests
             //_driver = new FirefoxDriver(@"C:\Users\User\source\repos\ICT3101_Calculator\ICT3101_Calculator.UnitTests\bin\Debug\netcoreapp2.2");
             FirefoxOptions option = new FirefoxOptions();
             option.AddArgument("--headless");
-            _driver = new FirefoxDriver(@"C:\Users\User\source\repos\ICT3101_Calculator\ICT3101_Calculator.UnitTests\bin\Debug\netcoreapp2.2",option);
+            _driver = new FirefoxDriver(option);
         }
         [Test]
         public void GoogleSubtract_WhenSubracting2from6_ResultEquals4()

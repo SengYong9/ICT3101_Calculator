@@ -21,7 +21,7 @@ namespace ICT3101_Calculator.UnitTests
 
             ChromeOptions option = new ChromeOptions();
             option.AddArgument("--headless");
-            _driver = new ChromeDriver(@"C:\Users\User\source\repos\ICT3101_Calculator\ICT3101_Calculator.UnitTests\bin\Debug\netcoreapp2.2", option);
+            _driver = new ChromeDriver(option);
 
         }
         [Test]
