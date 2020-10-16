@@ -28,11 +28,11 @@ namespace ICT3101_Calculator.UnitTests
         {
             //Setup----------------------------/
             _driver.Url = _testURL;
-            //System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(2000);
             //Act------------------------------/
             IWebElement searchBox = _driver.FindElement(By.CssSelector("[name = 'q']"));
             searchBox.SendKeys("6 - 2" + Keys.Return);
-            //System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(2000);
             //Assert---------------------------/
             IWebElement calcAnswer = _driver.FindElement(By.Id("cwos"));
             Assert.That(calcAnswer.Text, Is.EqualTo("4"));
