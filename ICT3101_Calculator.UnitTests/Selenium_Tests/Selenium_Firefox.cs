@@ -11,6 +11,7 @@ namespace ICT3101_Calculator.UnitTests
     [TestFixture]
     class Selenium_Firefox
     {
+        // Added firefox testing
         private string _testURL = "https://www.google.com";
         private IWebDriver _driver;
         [SetUp]
