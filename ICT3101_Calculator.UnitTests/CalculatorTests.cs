@@ -1,6 +1,7 @@
 
 using ICT3101_Calculator;
 using NUnit.Framework;
+using System;
 
 namespace ICT3101_Caculator.UnitTests
 {
@@ -115,6 +116,16 @@ namespace ICT3101_Caculator.UnitTests
             double result = _calculator.AreaOfCircle(5);
             //Assert
             Assert.That(result, Is.EqualTo(78.55));
+        }
+
+        [Test]
+        public void GenerateMagicNumber_WhenGeneratingMagicNumber_ResultEqualMagicNumber()
+        {
+            IFileReader fileReader = new FileReader();
+            //Act
+            double result = _calculator.GenMagicNum(4, fileReader);
+            //Assert
+            Assert.That(result, Is.EqualTo(180));
         }
 
         //Unknown Unit Test

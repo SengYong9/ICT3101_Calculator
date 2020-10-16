@@ -58,6 +58,7 @@ namespace ICT3101_Calculator
                 Console.WriteLine("\taot - AreaOfTriangle");
                 Console.WriteLine("\taor - AreaOfCircle");
                 Console.WriteLine("\tmtbf - Mean time between failure");
+                Console.WriteLine("\tmagic - Generate Magic Number");
                 Console.Write("Your option? ");
                 string op = Console.ReadLine();
  

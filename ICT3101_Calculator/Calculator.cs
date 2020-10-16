@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.IO.Pipes;
 using System.Text;
 
@@ -155,6 +156,21 @@ namespace ICT3101_Calculator
         {
             double answer = num1 + num2;
             return answer;
+        }
+
+        public double GenMagicNum(double input, IFileReader fileReader)
+        {
+            double result = 0;
+            int choice = Convert.ToInt16(input);
+            //Dependency------------------------
+            //----------------------------------
+            string[] magicStrings = fileReader.Read("MagicNumber.txt");
+            if((choice >= 0) && (choice < magicStrings.Length))
+            {
+                result = Convert.ToDouble(magicStrings[choice]);
+            }
+            result = (result > 0) ? (2 * result) : (-2 * result);
+            return result;
         }
 
         public double UnknownFunctionA(double num1, double num2)
